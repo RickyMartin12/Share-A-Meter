@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    <!--color: #000;-->
+    <!--background: #a7a09a;-->
+}
+
+
+#header {    
+    color: #ff0000;
+    border: 10px dotted blue;
+}
+
+#topLeftSide {
+    padding-bottom: 15px;
+}
+
+#topRightSide {
+    padding-bottom: 15px;
+}
+
+#topMidSide {
+    background-color: #f0f0f0;
+    padding-bottom: 15px;
+}
+
+<!---->
+.leftSide {
+    float: left;
+    width: 50px;
+    background-color: #505050;
+    position: fixed; 
+    top: 0px; 
+    bottom: 0px;
+}
+
+.rightSide {
+    float: right;
+    width: 50px;
+    background-color: #505050;
+    position: fixed; 
+    top: 0px; 
+    bottom: 0px;
+}
