@@ -1,0 +1,161 @@
+body
+{
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 12px;
+  color: white; 
+} 
+h1
+{
+  color:yellow;
+  font-size: 30px;
+  font-family: Arial, Gadget, sans-serif;
+  font-weight:bold;
+  text-align:center;
+}
+div3
+{
+  font-family: Arial, Gadget, sans-serif;
+  font-size:16px;
+  position: absolute;
+  top: 5px;
+  right: 60px;
+  font-weight:bold;
+  font-family: Arial, Gadget, sans-serif;
+}
+div2
+{
+  position: absolute;
+  left: 1px;
+  top: 280px;
+  width: 300px;
+  height: 300px;
+}
+div5
+{
+  position: absolute;
+  top: 280px;
+  left: 320px;
+  width: 700px;
+  height: 300px;
+  background-color: white;
+  color: black;
+  font-weight: normal;
+  border: 3px solid black;
+}
+
+div6
+{
+  position: absolute;
+  top: 280px;
+  left: 1050px;
+  width: 200px;
+  height: 100px;
+  background-color: #3366FF;
+  color: white;
+  border: 3px solid black;
+}
+
+div4
+{
+  position: absolute;
+  top: 480px;
+  left: 1050px;
+  width: 200px;
+  height: 100px;
+  background-color: #0099FF;
+  color: white;
+  border: 3px solid black;
+}
+
+.texto1
+{
+  left: 30px;
+  position: absolute;
+  top: 45px;
+}
+
+.texto2
+{
+  left: 80px;
+  position: absolute;
+  top: 45px;
+}
+
+div7
+{
+  position: absolute;
+  left: 1px;
+  top: 600px;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+div8
+{
+  position: absolute;
+  top: 600px;
+  left: 320px;
+  width: 700px;
+  height: 300px;
+  background-color: white;
+  color: black;
+  font-weight: normal;
+  border: 3px solid black;
+}
+
+div9
+{
+  position: absolute;
+  top: 600px;
+  left: 1050px;
+  width: 200px;
+  height: 100px;
+  background-color: #3366FF;
+  color: white;
+  border: 3px solid black;
+}
+
+.texto2
+{
+  left: 80px;
+  position: absolute;
+  top: 45px;
+}
+
+.texto3
+{
+  left: 40px;
+  position: absolute;
+  top: 45px;
+}
+
+.texto4
+{
+  left: 80px;
+  position: absolute;
+  top: 45px;
+}
+
+div10
+{
+  position: absolute;
+  top: 800px;
+  left: 1050px;
+  width: 200px;
+  height: 100px;
+  background-color: #0099FF;
+  color: white;
+  border: 3px solid black;
+}
+
+.nomes
+{
+  font-size: 15px;
+  font-family: Arial, Gadget, sans-serif;
+  color: white;
+  top: 1000px;
+  position: absolute;
+  font-weight:normal;
+}

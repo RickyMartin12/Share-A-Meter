@@ -1,0 +1,33 @@
+#w2b-searchbox
+{
+background:url(http://lh5.googleusercontent.com/-Cm6Ya53Wj6g/TeixHY3LRDI/AAAAAAAAA6I/jJkMnJEN60s/way2blogging_searchbox1.png) 
+no-repeat scroll center center transparent;
+width:307px;
+height:50px;
+disaply:block;
+}
+form#w2b-searchform
+{display: block;
+padding: 10px 12px;
+margin:0;
+}
+form#w2b-searchform #s
+{
+padding: 6px;
+margin:0;
+width: 235px;
+font-size:14px;
+vertical-align: top;
+border:none;
+background:transparent;
+}
+form#w2b-searchform #sbutton
+{
+margin:0;
+padding:0;
+height:30px;
+width:30px;
+vertical-align: top;
+border:none;
+background:transparent;
+}

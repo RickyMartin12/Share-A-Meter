@@ -1,0 +1,138 @@
+body
+{
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 15px;
+  color: white; 
+} 
+h1
+{
+  color:yellow;
+  font-size: 30px;
+  font-family: Arial, Gadget, sans-serif;
+  font-weight:bold;
+  text-align:center;
+}
+div3
+{
+  font-family: Arial, Gadget, sans-serif;
+  font-size:16px;
+  position: absolute;
+  top: 65px;
+  right: 60px;
+  font-weight:bold;
+  font-family: Arial, Gadget, sans-serif;
+}
+div6
+{
+  position: absolute;
+  left: 280px;
+  top: 280px;
+  width: 650px;
+  height: 300px;
+}
+
+
+
+div4
+{
+  position: absolute;
+  left: 1px;
+  top: 280px;
+  color: white;
+  font-size: 15px;
+}
+
+div5
+{
+  position: absolute;
+  right: 1px;
+  top: 280px;
+  width: 300px;
+  height: 300px;
+  border: 3px solid black;
+  background-color: #686868;
+  font-weight: normal;
+}
+
+div2
+{
+  background-color: blue;
+  text-align: left;
+  letter-spacing:2px;
+  line-height:10%;
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 15px;
+  right:8px;
+  top: 140px;
+  width:450px;
+  height:72px;
+  position: absolute;
+  font-weight:normal;
+}
+
+.left
+{
+  height:60px;
+  width:60px;
+  display: block;
+  position: absolute;
+  left: 120px;
+  top: 15;  
+  bottom: 10; 
+}
+
+.facebook
+{
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  bottom: 10; 
+  top: 5;
+  right: 6px;
+  
+}
+
+.align_text
+{
+  left: 10px;
+  bottom: 10; 
+  top: 20;
+  position: absolute;
+  bottom: 10; 
+}
+
+.facebook2
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 10; 
+  top: -1;
+  right: 1px;
+}
+
+.yellow
+{
+  color: yellow;
+  font-family: Arial, Gadget, sans-serif;
+  font-size:12px;
+  right: 222px;
+}
+
+.letra
+{
+  position: absolute;
+  bottom: 10px; 
+  top: 40px;
+  right: 100px;
+}
+
+.nomes
+{
+  font-size: 15px;
+  font-family: Arial, Gadget, sans-serif;
+  color: white;
+  top: 700px;
+  position: absolute;
+  font-weight:normal;
+}
