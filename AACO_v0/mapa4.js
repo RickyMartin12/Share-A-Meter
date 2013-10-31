@@ -1,4 +1,3 @@
-
 var rendererOptions = {
   draggable: true
 };
@@ -6,14 +5,14 @@ var directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);;
 var directionsService = new google.maps.DirectionsService();
 var map;
 
-var europe = new google.maps.LatLng(37.1167,7.6500);
+var australia = new google.maps.LatLng(-25.274398, 133.775136);
 
 function initialize() {
 
   var mapOptions = {
     zoom: 7,
-    mapTypeId: google.maps.MapTypeId.HYBRID,
-    center: europe
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: australia
   };
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   directionsDisplay.setMap(map);
@@ -28,7 +27,7 @@ function initialize() {
 
 function calcRoute() {
 
-  var request = {
+var request = {
     origin: 'Faro, Portugal',
     destination: 'Faro',
     waypoints:[{location: 'Tavira'}, {location: 'Lisbon'}, {location: 'Madrid'}, {location: 'Rome'}, {location: 'Prage'}],
