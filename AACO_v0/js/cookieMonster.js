@@ -59,5 +59,7 @@ function getCookieVal(offset) {
 }
 
 function startup() {
-    alert("You've been here " + amt() + " times.");
+    var location = document.getElementById("counter");
+    location.innerHTML = amt();
+    //alert("You've been here " + amt() + " times.");
 }

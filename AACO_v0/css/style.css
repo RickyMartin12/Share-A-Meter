@@ -491,3 +491,7 @@ ul ul span.sf-arrow {
     right: 12px;
     top: 15px;
 }
+
+#counter {
+    text-align:center;
+}
