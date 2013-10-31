@@ -1,187 +1,173 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     background: #505050;
 }
-
 #wrap {
     width: 1100px;
     margin: 0 auto;
     background: #f0f0f0;
 }
-
 #header {
-    background:#0066cc;
+    background: #0066cc;
     color: #ff9900;
     margin-top: 25px;
     padding: 5px;
     height: 60px;
 }
-
-#nav {
-    
+#main {
+    padding: 10px;
 }
 
-#footer {
-    background:#0066cc;
+.trackMap {
+    position: absolute;
+    left: 30px;
+    top: 350px;
+    width: 400px;
+    height: 300px;
+}
+.trackDescription {
+}
+
+.track {
+    padding: 10px;
+    clear: both;
+}
+.content {
+    float: right;
+}
+#nav {} #footer {
+    background: #0066cc;
     color: #ff9900;
     padding: 5px;
 }
-
 #title {
-    float:left;
+    float: left;
     width: 250px;
 }
-
 #search {
     float: right;
 }
-
-<!-- Para o menu -->
-
-#menu,
+<!-- Para o menu --> #menu,
 #menu ul,
-#menu ul, li,
+#menu ul,
+li,
 #menu ul li a {
-    clear:left;
+    clear: left;
     float: left;
     width: auto;
     padding: 0;
     margin: 0;
-    line-height:1;
+    line-height: 1;
 }
-
-#menu: before, 
-#menu: after,
-#menu > ul: before,
-#menu > ul: after {
+#menu: before, #menu: after, #menu > ul: before, #menu > ul: after {
     content: '';
     display: table;
 }
-
-#menu:after,
-#menu > ul:after {
-  clear: both;
+#menu: after, #menu > ul: after {
+    clear: both;
 }
-
 #menu a {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
-
 #menu ul {
     background: #3b5998;
     border-radius: 3px;
     border: 1px solid #2b4479;
     border: 1px solid #2d4373;
 }
-
 #menu ul > li {
-  float: left;
-  list-style: none;
-  height: 9%;
+    float: left;
+    list-style: none;
+    height: 9%;
 }
-
 #menu ul > li > a {
-  display: block;
-  text-decoration: none;
-  padding: 15px 44px;
-  position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 15px 44px;
+    position: relative;
 }
-
-#menu ul > li > a:hover {
-  background: #2d4373;
+#menu ul > li > a: hover {
+    background: #2d4373;
 }
-
-#menu ul > li > a:hover:before {
-  content: '';
-  z-index: 2;
-  position: absolute;
-  border: 1px solid white;
-  border-top: 0;
-  border-bottom: 0;
-  border-right: 0;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: -1px;
-  opacity: .2;
+#menu ul > li > a: hover: before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    border: 1px solid white;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -1px;
+    opacity: .2;
 }
-
-#menu ul > li > a:hover:after {
-  content: '';
-  z-index: 2;
-  position: absolute;
-  border: 1px solid white;
-  border-top: 0;
-  border-bottom: 0;
-  border-left: 0;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: -1px;
-  opacity: .2;
+#menu ul > li > a: hover: after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    border: 1px solid white;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -1px;
+    opacity: .2;
 }
-
 #menu > ul > li > ul {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
 }
-
-#menu > ul > li:hover > ul {
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
+#menu > ul > li: hover > ul {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
 }
-
 #menu > ul > li > ul {
-  width: 200px;
-  position: absolute;
+    width: 200px;
+    position: absolute;
 }
-
 #menu > ul > li > ul > li {
-  float: none;
-  position: relative;
+    float: none;
+    position: relative;
 }
-
 #menu > ul > li > ul > li > ul {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
 }
-
-#menu > ul > li > ul > li:hover > ul {
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
+#menu > ul > li > ul > li: hover > ul {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
 }
-
 #menu > ul > li > ul > li > ul {
-  left: 200px;
-  top: 1px;
-  width: 200px;
+    left: 200px;
+    top: 1px;
+    width: 200px;
 }
-
 #menu > ul > li > ul > li > ul > li {
-  float: none;
+    float: none;
 }
-
-
-<!---->
-.leftSide {
+<!----> .leftSide {
     float: left;
     width: 50px;
     background-color: #505050;
-    position: fixed; 
-    top: 0px; 
+    position: fixed;
+    top: 0px;
     bottom: 0px;
 }
-
 .rightSide {
     float: right;
     width: 50px;
     background-color: #505050;
-    position: fixed; 
-    top: 0px; 
+    position: fixed;
+    top: 0px;
     bottom: 0px;
 }
