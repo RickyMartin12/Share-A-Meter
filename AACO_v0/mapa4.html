@@ -9,6 +9,15 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script> type="mapa4.js"</script>
+        <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
 </head>
 
 <body>
@@ -88,19 +97,6 @@
           <div class="sidebar_base"></div>
         </div>
       </div>
-        
-                      <!-- 
-
-######################################################A
-##########################################################A
-####################################C
-####################################O
-#           -->
-      <div class="content">
-        <h1>Exemplo de Mapa nº4</h1>
-        <div class="content_item">
-          <p>Como poderá ser obervado ao ir para a página do exemplo este é o percurso do exmplo nº3 mas encontra-se incorporado numa página com o layout do site. <br> <a href="mapa4.html">Exemplo nº4</a> </p>
-        </div>
                   <!-- 
 
 ######################################################A
@@ -111,43 +107,22 @@
       <div class="content">
         <h1>Exemplo de Mapa nº3</h1>
         <div class="content_item">
-          <p>Este mapa acrescenta mais pontos intermédios ao mapa anterior, por favor repare que apesar de conseguir alterar o percurso este volta ao modo pre-definido quando a página é recarregada. <br> <a href="mapa3.html">Exemplo nº3</a> </p>
-        </div>
-                    <!-- 
-
-######################################################A
-##########################################################A
-####################################C
-####################################O
-#           -->
-      <div class="content">
-        <h1>Exemplo de Mapa nº2</h1>
-        <div class="content_item">
-          <p>Este mapa mostra um percurso simples mas quepara além da origem e destino contém um ponto intermedio por onde deve passar, por favor repare que apesar de conseguir alterar o percurso este volta ao modo pre-definido quando a página é recarregada. <br> É de notar ainda o aviso sobre os as direcções enquanto se caminha estarem ainda na versão beta na API da Google.<br> <a href="mapa2.html">Exemplo nº2</a> </p>
-        </div>  
-                    <!-- 
-
-######################################################A
-##########################################################A
-####################################C
-####################################O
-#           -->
-      <div class="content">
-        <h1>Exemplo de Mapa nº1</h1>
-        <div class="content_item">
-          <p>Este mapa mostra um percurso simples que apenas tem origem e destino, por favor repare que apesar de conseguir alterar o percurso este volta ao modo pre-definido quando a página é recarregada <br> <a href="mapa1.html">Exemplo nº1</a>  </p>
-        </div>
-      <div class="content">
-          <!-- 
-
-######################################################A
-##########################################################A
-####################################C
-####################################O
-#           -->
-
-
+          <p>
+            <div id="map-canvas" style="height: 500px; width: 700px">
+    <div id="directionsPanel" style="float:right;width:30%;height 100%">
+    <p>Total Distance: <span id="total"></span></p>
     </div>
+          </p>
+        </div>
+                    <!-- 
+
+######################################################A
+##########################################################A
+####################################C
+####################################O
+#           -->
+  
+            
     <footer>
       <p><a href="index.html">Home</a> | <a href="examples.html">Examplos</a> | <a href="page.html">Porquê este tema</a> | <a href="another_page.html">Contactose</a> | 
      <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
