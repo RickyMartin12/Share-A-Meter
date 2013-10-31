@@ -5,7 +5,6 @@
         <link href="logo.gif" type="image/gif" rel="shortcut icon" />
         <link type="text/css" href="css\stylesheet.css" rel="stylesheet" />
 
-
         <meta name="description" content="Share your trails with the world">
         <meta name="author" content="Aléxio Rodrigues">
         <meta name="author" content="André Oliveira">
@@ -13,184 +12,53 @@
         <meta name="keywords" content="running, walking, sharing, maps, courses, tracks, roads">
         <!-- Codificação latina para acentos e afins -->
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-16">
-
-        <!-- A remover -->
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
-        <script src="js\maps.js" type="text/javascript"></script>
-        <script src="js\maps2.js" type="text/javascript"></script>    
-
-        <link type="text/css" href="css\options.css" rel="stylesheet" />
-        <link rel='stylesheet' type='text/css' href='css\styles.css' />
-        <link rel='stylesheet' type='text/css' href='css\search.css' />
-
     </head>
-    <body background="images/mainpage/bg.jpg">
-        
-        <!-- Layout -->
-        <!-- Top -->
-        <div id="topLeftSide" class="sides"></div>
-        <div id="topMidSide"></div>
-        <div id="topRightSide" class="sides"></div>
-        <!-- Header  -->
-        <div id="header">
-            it's the lolz
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <div id="title"><a href="#">Share a Meter</a></div>
+                <!-- Menu do documento -->
+                <div id="menu">
+                    <ul>
+                        <li class='active'><a href='index.html'>Home</a></li>
+                        <li class='has-sub'><a href='#'>Percursos</a>
+                            <ul>
+                                <li class='active'><a href='trackpop.html'>Percursos mais populares</a></li>
+                                <li class='active'><a href='tracknew.html'>Submeter Percursos</a></li>
+                            </ul>
+                        </li>
+                        <li class='has-sub'><a href='#'>Conta</a>
+                            <ul>
+                                <li class='last'><a href='#'>Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div id="search">
+                    <form id="w2b-searchform" action="http://www.google.com/search" method="get">
+                        <input type="text" id="s" name="q" value="Search..." onfocus='if (this.value == "Search...") {this.value = ""}' onblur='if (this.value == "") {this.value = "Search...";}'/>
+                        <input type="image" src="http://img1.blogblog.com/img/blank.gif" id="sbutton"/>
+                    </form>
+                </div>
+            </div>
+            <div id="side1"></div>
+            <div id="side2"></div>
+            <div id="main">
+                <div class="track">
+                    <h1>Título do percurso</h1>
+                    <div id="mapArea"></div>
+                </div>
+                
+                
+                <h2>Conteúdo das páginas</h2>
+                <p>Blejabfkjsgn«glnshm,llv sh kjnltmg,vbtjk shl gkjt,j vbrynty rttntuy hynkrt ryn t</p>
+            </div>
+            <div id="footer">
+                <p><a href="about.html">Sobre</a> | <a href="#">Ajuda</a></p>
+                <p>2013 © Aléxio Rodrigues | André Oliveira | Ricardo Peleira</p>
+            </div>
         </div>
-        <!-- Body -->
-        <div id="bodyLeftSide" class="sides"></div>
-        <div id="bodyMain" class="sides">
-        
-        </div>
-        <div id="bodyRightSide" class="sides"></div>
-        <!-- Footer -->
-        <div id="footer">
-        
-        </div>
-        <!-- Bottom -->
-        <div id="bottomLeftSide" class="sides"></div>
-        <div id="bottomMidSide"></div>
-        <div id="bottmRightSide"  class="sides"></div>
-        
-        
-        
-        
-        
-<div id='cssmenu'>
-<ul>
-   <li class='active'><a href='index.html'><span>Home</span></a></li>
-   <li class='has-sub'><a href='#'><span>Opções</span></a>
-      <ul>
-         <li class='active'><a href='sub_com.html'><span>Submeter Coment�rios</span></a></li>
-         <li class='active'><a href='sub_per.html'><span>Submeter Percursos</span></a></li>
-         <li class='has-sub'><a href='#'><span>Votos</span></a>
-            <ul>
-               <li><a href='vot_pos.html'>Positivos</span></a></li>
-               <li><a href='vot_neg.html'><span>Negativos</span></a></li>
-            </ul>
-         </li>
-         <li class='active'><a href='perfil.html'><span>Perfil</span></a></li>
-      </ul>
-   </li>
-   <li class='has-sub'><a href='#'><span>Percursos</span></a>
-      <ul>
-               <li><a href='mais_pop.html'>Mais Populares</span></a></li>
-               <li class='last'><a href='mais_recen.html'><span>Mais Recentes</span></a></li>
-      </ul>
-    </li>
-   <li class='has-sub'><a href='#'><span>Ajuda</span></a>
-      <ul>
-               <li><a href='email.html'>Email</span></a></li>
-               <li class='last'><a href='quem.html'><span>Quem Somos</span></a></li>
-      </ul>
-    </li>  
-   <li class='last'><a href='#'><span>Comentários</span></a>
-      <ul>
-               <li><a href='alt_com.html'>Alterar</span></a></li>
-      </ul>
-   </li> 
-</ul>
-
-</div>
-<div2>
-<!-- Formata��o em PHP da inicializa��o da sess�o-->
-<span class="align_text">  Bem vindo, Utilizador</span>
-<!-- imagem do facebook -->
-
-<a href="http://www.facebook.com">
-<button type="button" class="facebook">
-<img src="image/buttons/facebook-por.jpg" alt="Save icon" class="facebook2"/>
-<br>
-
-
-</button>
-<p class="letra">
-<a href="iniciar.php" class="yellow">Iniciar sess�o</a> | <a href="registar.php" class="yellow">Registar</a> | <a href="terminar.php" class="yellow">Terminar Sess�o</a>
-</a>
-</p>
-
-</div2>
-
-<a href="Mapa.html">
-<button type="button" class="cor">
-Criar um pr�prio mapa
-</button>
-</a>
-
-<div3 id="w2b-searchbox">
-<form id="w2b-searchform" action="http://www.google.com/search" method="get">
-    <input type="text" id="s" name="q" value="Search..." onfocus='if (this.value == "Search...") {this.value = ""}' onblur='if (this.value == "") {this.value = "Search...";}'/>
-    <input type="image" src="http://img1.blogblog.com/img/blank.gif" id="sbutton"/>
-    </a>
-</form>
-</div3>
-
-<!-- Inserir o google Maps -->
-
-<div4 id="googleMap" ></div4>
-<div8>
-<form method="post" action="index.php">
-<b>Titulo do mapa</b>
-<input type="text" name="titulo">
-<br>
-<br>
-<br>
-<b>Descri��o:</b>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<textarea Name="descricao" Rows="1" cols="90"></textarea>
-<br />
-<br />
-<br />
-<br />
-<br />
-<input type="submit" value="Submeter">
-<input type="reset" value="Cancelar">
-</form>
-</div8>
-
-<div7 id="googleMap2" ></div7>
-<div9>
-<form method="post" action="index.php">
-<b>Titulo do mapa</b>
-<input type="text" name="titulo">
-<br>
-<br>
-<br>
-<b>Descri��o:</b>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<textarea Name="descricao" Rows="1" cols="90"></textarea>
-<br />
-<br />
-<br />
-<br />
-<br />
-<input type="submit" value="Submeter">
-<input type="reset" value="Cancelar">
-</form>
-</div9>
-
-<!-- Direitos de Autor -->
-
-<span class="nomes">
-� Copyright 2012-2013 Shared by r.peleira@hotmail.com, foxdarkmaster@hotmail.com, a41879@ualg.pt feito com tepaltes de html5 e css3 construidos na universidade do algarve
-</span>
-
-
-</body>
+    </body>     
 </html>
+          
