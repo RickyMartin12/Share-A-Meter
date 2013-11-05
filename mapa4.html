@@ -5,8 +5,8 @@
     <title>Share-a-Meter</title>
     <meta name="description" content="Partilha de Percursos" />
 
-    <meta name="author" content="Aléxio Rodrigues">
-    <meta name="author" content="André Oliveira">
+    <meta name="author" content="Al�xio Rodrigues">
+    <meta name="author" content="Andr� Oliveira">
     <meta name="author" content="Ricardo Peleira">
     <meta name="keywords" content="running, walking, sharing, maps, courses, tracks, roads">
 
@@ -14,9 +14,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- modernizr enables HTML5 elements and feature detects -->
     <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <!-- Cookies -->
+    <script type="text/javascript" src="js/cookieMonster.js"></script>
 </head>
 
-<body>
+<body onLoad="startup();">
     <div id="main">
         <header>
             <div id="logo">
@@ -24,6 +26,7 @@
                     <!-- class="logo_colour", allows you to change the colour of the text -->
                     <h1>
                         <a href="index.html">Share<span class="logo_colour">-a-Meter</span>
+
                         </a>
                     </h1>
                     <h2>Pequeno site de Partilha de Percursos</h2>
@@ -31,6 +34,24 @@
                 <form method="post" action="#" id="search">
                     <input class="search" type="text" name="search_field" value="search....." onclick="javascript: document.forms['search'].search_field.value=''" />
                     <input name="search" type="image" style="float: right;border: 0; margin: 20px 0 0 0;" src="images/search.png" alt="search" title="search" />
+                </form>
+
+            </div>
+            <nav>
+                <ul class="sf-menu" id="nav">
+                    <li class="current">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="exemplos.html">Exemplos</a>
+
+                    </li>
+                    <li>
+                        <a href="porque.html">Porqu� este tema</a>
+                    </li>
+                    <li>
+                        <a href="contactos.html">Contactos</a>
+                    </li>
   <!--        <li><a href="#">Example Drop Down</a>
             <ul>
               <li><a href="#">Drop Down One</a></li>
@@ -55,22 +76,22 @@
         <div id="site_content">
             <div id="sidebar_container">
                 <div class="sidebar">
-                    <h3>Últimas notícias</h3>
+                    <h3>�ltimas not�cias</h3>
                     <div class="sidebar_item">
                         <h4>Website Criado</h4>
                         <h5>30 de Outubro de 2013</h5>
-                        <p>Site Criado no âmbito da disciplina de DAW no ano curricular 2013/2014</p>
+                        <p>Site Criado no �mbito da disciplina de DAW no ano curricular 2013/2014</p>
                     </div>
                     <div class="sidebar_base"></div>
                 </div>
                 <div class="sidebar">
-                    <h3>Links Úteis</h3>
+                    <h3>Links �teis</h3>
                     <div class="sidebar_item">
                         <ul>
                             <li>
                                 <a href="https://maps.google.com" target="_blank">Google Maps</a>                            </li>
                             <li>
-                                <a href="http://tutoria.ualg.pt/2013/course/view.php?id=2527" target="_blank">Tutoria Electronica: Página de DAW</a>
+                                <a href="http://tutoria.ualg.pt/2013/course/view.php?id=2527" target="_blank">Tutoria Electronica: P�gina de DAW</a>
                             </li>
                             <!--    <li><a href="#">link 3</a></li>
               <li><a href="#">link 4</a></li> -->
@@ -79,7 +100,7 @@
                     <div class="sidebar_base"></div>
                 </div>
                 <div class="sidebar">
-                    <h3>Mais Links Úteis</h3>
+                    <h3>Mais Links �teis</h3>
                     <div class="sidebar_item">
                         <ul>
                             <li>
@@ -95,19 +116,6 @@
                     <div class="sidebar_base"></div>
                 </div>
             </div>
-        
-                      <!-- 
-
-######################################################A
-##########################################################A
-####################################C
-####################################O
-#           -->
-      <div class="content">
-        <h1>Exemplo de Mapa nº4</h1>
-        <div class="content_item">
-          <p>Como poderá ser obervado ao ir para a página do exemplo este é o percurso do exmplo nº3 mas encontra-se incorporado numa página com o layout do site. <br> <a href="mapa4.html">Exemplo nº4</a> </p>
-        </div>
                   <!-- 
 
 ######################################################A
@@ -116,47 +124,27 @@
 ####################################O
 #           -->
       <div class="content">
-        <h1>Exemplo de Mapa nº3</h1>
+        <h1>Exemplo de Mapa n�4</h1>
         <div class="content_item">
-          <p>Este mapa acrescenta mais pontos intermédios ao mapa anterior, por favor repare que apesar de conseguir alterar o percurso este volta ao modo pre-definido quando a página é recarregada. <br> <a href="mapa3.html">Exemplo nº3</a> </p>
-        </div>
-                    <!-- 
-
-######################################################A
-##########################################################A
-####################################C
-####################################O
-#           -->
-      <div class="content">
-        <h1>Exemplo de Mapa nº2</h1>
-        <div class="content_item">
-          <p>Este mapa mostra um percurso simples mas quepara além da origem e destino contém um ponto intermedio por onde deve passar, por favor repare que apesar de conseguir alterar o percurso este volta ao modo pre-definido quando a página é recarregada. <br> É de notar ainda o aviso sobre os as direcções enquanto se caminha estarem ainda na versão beta na API da Google.<br> <a href="mapa2.html">Exemplo nº2</a> </p>
-        </div>  
-                    <!-- 
-
-######################################################A
-##########################################################A
-####################################C
-####################################O
-#           -->
-      <div class="content">
-        <h1>Exemplo de Mapa nº1</h1>
-        <div class="content_item">
-          <p>Este mapa mostra um percurso simples que apenas tem origem e destino, por favor repare que apesar de conseguir alterar o percurso este volta ao modo pre-definido quando a página é recarregada <br> <a href="mapa1.html">Exemplo nº1</a>  </p>
-        </div>
-      <div class="content">
-          <!-- 
-
-######################################################A
-##########################################################A
-####################################C
-####################################O
-#           -->
-
-
+          <p>
+    <iframe height="400px" width="100%" frameBorder="0" scrolling="yes"
+        src="mapa3.html">
+    </iframe>    <p>Total Distance: <span id="total"></span></p>
     </div>
+    </div>
+          </p>
+        </div>
+                    <!-- 
+
+######################################################A
+##########################################################A
+####################################C
+####################################O
+#           -->
+  
+            
     <footer>
-      <p><a href="index.html">Home</a> | <a href="exemplos.html">Exemplos</a> | <a href="porque.html">Porquê este tema</a> | <a href="contactos.html">Contactos</a> | 
+      <p><a href="index.html">Home</a> | <a href="exemplos.html">Exemplos</a> | <a href="porque.html">Porqu� este tema</a> | <a href="contactos.html">Contactose</a> | 
      <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
     </footer>
   </div>

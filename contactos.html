@@ -5,8 +5,8 @@
     <title>Share-a-Meter</title>
     <meta name="description" content="Partilha de Percursos" />
 
-    <meta name="author" content="AlÃ©xio Rodrigues">
-    <meta name="author" content="AndrÃ© Oliveira">
+    <meta name="author" content="Aléxioo Rodrigues">
+    <meta name="author" content="André Oliveira">
     <meta name="author" content="Ricardo Peleira">
     <meta name="keywords" content="running, walking, sharing, maps, courses, tracks, roads">
 
@@ -14,9 +14,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- modernizr enables HTML5 elements and feature detects -->
     <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <!-- Cookies -->
+    <script type="text/javascript" src="js/cookieMonster.js"></script>
 </head>
 
-<body>
+<body onLoad="startup();">
     <div id="main">
         <header>
             <div id="logo">
@@ -24,6 +26,7 @@
                     <!-- class="logo_colour", allows you to change the colour of the text -->
                     <h1>
                         <a href="index.html">Share<span class="logo_colour">-a-Meter</span>
+
                         </a>
                     </h1>
                     <h2>Pequeno site de Partilha de Percursos</h2>
@@ -31,6 +34,24 @@
                 <form method="post" action="#" id="search">
                     <input class="search" type="text" name="search_field" value="search....." onclick="javascript: document.forms['search'].search_field.value=''" />
                     <input name="search" type="image" style="float: right;border: 0; margin: 20px 0 0 0;" src="images/search.png" alt="search" title="search" />
+                </form>
+
+            </div>
+            <nav>
+                <ul class="sf-menu" id="nav">
+                    <li class="current">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="exemplos.html">Exemplos</a>
+
+                    </li>
+                    <li>
+                        <a href="porque.html">Porquê este tema</a>
+                    </li>
+                    <li>
+                        <a href="contactos.html">Contactos</a>
+                    </li>
   <!--        <li><a href="#">Example Drop Down</a>
             <ul>
               <li><a href="#">Drop Down One</a></li>
@@ -55,22 +76,22 @@
         <div id="site_content">
             <div id="sidebar_container">
                 <div class="sidebar">
-                    <h3>Ãšltimas notÃ­cias</h3>
+                    <h3>Últimas notícias</h3>
                     <div class="sidebar_item">
                         <h4>Website Criado</h4>
                         <h5>30 de Outubro de 2013</h5>
-                        <p>Site Criado no Ã¢mbito da disciplina de DAW no ano curricular 2013/2014</p>
+                        <p>Site Criado no âmbito da disciplina de DAW no ano curricular 2013/2014</p>
                     </div>
                     <div class="sidebar_base"></div>
                 </div>
                 <div class="sidebar">
-                    <h3>Links Ãšteis</h3>
+                    <h3>Links Úteis</h3>
                     <div class="sidebar_item">
                         <ul>
                             <li>
                                 <a href="https://maps.google.com" target="_blank">Google Maps</a>                            </li>
                             <li>
-                                <a href="http://tutoria.ualg.pt/2013/course/view.php?id=2527" target="_blank">Tutoria Electronica: PÃ¡gina de DAW</a>
+                                <a href="http://tutoria.ualg.pt/2013/course/view.php?id=2527" target="_blank">Tutoria Electronica: Página de DAW</a>
                             </li>
                             <!--    <li><a href="#">link 3</a></li>
               <li><a href="#">link 4</a></li> -->
@@ -79,7 +100,7 @@
                     <div class="sidebar_base"></div>
                 </div>
                 <div class="sidebar">
-                    <h3>Mais Links Ãšteis</h3>
+                    <h3>Mais Links Úteis</h3>
                     <div class="sidebar_item">
                         <ul>
                             <li>
@@ -104,7 +125,7 @@
 #           -->
       <div class="content">
 
-          <h1>AlÃ©xio Rodrigues</h1>
+          <h1>Aléxio Rodrigues</h1>
         <div class="content_item">
           <p><a href="mailto:a35330@ualg.pt">a35330@ualg.pt</a>
 
@@ -119,7 +140,7 @@
 #           -->
       <div class="content">
 
-          <h1>AndrÃ© Oliveira</h1>
+          <h1>André Oliveira</h1>
         <div class="content_item">
           <p><a href="mailto:a41879@ualg.p">a41879@ualg.p</a>
 
@@ -139,7 +160,7 @@
     </div>
         </div>
     <footer>
-      <p><a href="index.html">Home</a> | <a href="examples.html">exemplos</a> | <a href="page.html">PorquÃª este tema</a> | <a href="another_page.html">Contactos</a> | 
+      <p><a href="index.html">Home</a> | <a href="examples.html">exemplos</a> | <a href="page.html">Porquê este tema</a> | <a href="another_page.html">Contactos</a> | 
      <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
     </footer>
   </div>
